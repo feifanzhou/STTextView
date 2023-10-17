@@ -127,6 +127,8 @@ private struct TextViewRepresentable: NSViewRepresentable {
         if textView.font != font {
             textView.font = font
         }
+
+        textView.textColor = NSColor.textColor // This should be a dynamic color that changes with the color scheme
     }
 
     func makeCoordinator() -> TextCoordinator {
